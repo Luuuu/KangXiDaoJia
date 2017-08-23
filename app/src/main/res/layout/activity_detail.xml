@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/detail_mbg"
+    android:paddingLeft="@dimen/px58">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/details_tital" />
+
+        <include layout="@layout/detail_detail" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/px917"
+        android:layout_height="@dimen/px722"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+
+            android:layout_marginLeft="@dimen/px58"
+            android:layout_marginBottom="@dimen/px66"
+            android:id="@+id/detail_pic"
+            android:layout_width="@dimen/px814"
+            android:layout_height="@dimen/px590"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@mipmap/detail_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+      <!--  <ImageView
+            android:layout_width="@dimen/px232"
+            android:layout_height="@dimen/px232"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px10"
+            android:layout_marginTop="@dimen/px30"
+            android:src="@drawable/detail_triangle_up" />
+
+        <ImageView
+            android:elevation="@dimen/px100"
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/px232"
+            android:layout_height="@dimen/px232"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/px30"
+            android:layout_marginLeft="@dimen/px20"
+            android:src="@drawable/detail_triangle_down" />-->
+        <!--pic-->
+       <!-- <ImageView
+            android:layout_width="@dimen/px273"
+            android:layout_height="@dimen/px299"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/detali_up" />
+
+        <ImageView
+            android:elevation="@dimen/px100"
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/px273"
+            android:layout_height="@dimen/px299"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/detali_down" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

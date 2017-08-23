@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/kxdj_bg">
+
+    <FrameLayout
+        android:id="@+id/shop_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:paddingTop="@dimen/px210"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="请 输 入 设 备 SHOP ID"
+                android:textSize="@dimen/px60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/px210"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+            
+            <EditText
+                android:textSize="@dimen/px40"
+                android:paddingLeft="@dimen/px80"
+                android:id="@+id/et_shop_id"
+                android:background="@drawable/select_shop_id"
+                android:inputType="number"
+                android:layout_width="@dimen/px600"
+                android:layout_height="@dimen/px90"/>
+            <Button
+                android:background="@drawable/select_shop_id_bt"
+                android:id="@+id/bt_shop_id"
+                android:layout_marginLeft="@dimen/px80"
+                android:text="确 定"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px60"
+                android:layout_width="@dimen/px200"
+                android:layout_height="@dimen/px100"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll_visible_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/splash_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_ad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px905"
+                android:background="#7e7e6d"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/px100"
+                    android:src="@mipmap/splash_bottom"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/splash_timer"
+            android:layout_width="@dimen/px80"
+            android:layout_height="@dimen/px80"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px55"
+            android:layout_marginTop="@dimen/px30"
+            android:background="@drawable/shape_splash_timer"
+            android:gravity="center"
+            android:textSize="@dimen/px28"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--主背景-->
+    <color name="kxdj_bg">#f5d9c6</color>
+    <!--主色调-->
+    <color name="orange_color">#fb5413</color>
+    <!--首页item灰色字体-->
+    <color name="hanzi_gray">#5c5b5b</color>
+    <!--详情页字体-->
+    <color name="details_hanzi">#421411</color>
+    <!--详情页线-->
+    <color name="details_line">#bdb3a9</color>
+</resources>

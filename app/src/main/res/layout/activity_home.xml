@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_home"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/kxdj_bg"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/px53"
+              android:paddingLeft="@dimen/px45">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/home_tital"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px185"
+        android:paddingTop="@dimen/px48"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/orange_color"
+            android:text="康喜到家"
+            android:textStyle="bold"
+            android:textSize="@dimen/px78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/home_tital_name"
+            android:textColor="@color/orange_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/px50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.justdo.kangxidaojia.widget.CustomRecycleView
+        android:id="@+id/id_recyclerview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px780"
+
+        android:scrollbars="none"/>
+    <!--android:layout_centerVertical="true"-->
+</LinearLayout>

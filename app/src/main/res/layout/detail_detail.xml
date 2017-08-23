@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:layout_width="@dimen/px950"
+        android:layout_height="@dimen/px4"
+        android:background="@color/details_line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px58"
+        android:text="【主治疗】"
+        android:textColor="@color/details_hanzi"
+        android:textSize="@dimen/px30"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px150"
+        android:layout_marginTop="@dimen/px32"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/detail_oneword"
+            android:layout_width="@dimen/px930"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            android:textColor="@color/details_hanzi"
+            android:textSize="@dimen/px42"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px42"
+        android:textColor="@color/details_hanzi"
+        android:textSize="@dimen/px30"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px64"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【预约电话】"
+            android:textColor="@color/details_hanzi"
+            android:textSize="@dimen/px30"/>
+
+        <TextView
+            android:id="@+id/detail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/px54"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/px216"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px80"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detail_qr"
+                android:layout_width="@dimen/px216"
+                android:layout_height="@dimen/px216"
+                />
+             <LinearLayout
+                 android:gravity="center_horizontal"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:text="扫"
+                     android:textStyle="bold"
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/px20"
+                     android:textSize="@dimen/px30"/>
+
+                 <TextView
+                     android:text="码"
+                     android:textStyle="bold"
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/px30"/>
+                 <TextView
+                     android:text="支"
+                     android:textStyle="bold"
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/px30"/>
+                 <TextView
+                     android:text="付"
+                     android:textStyle="bold"
+                     android:layout_weight="1"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/px30"/>
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
